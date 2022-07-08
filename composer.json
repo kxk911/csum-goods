@@ -1,0 +1,21 @@
+{
+    "name": "kxk911/csum-goods",
+    "description": "Package implements good storing for shop",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kxk911\\csum-goods\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Konstantin Chizhov",
+            "email": "kostya.ch911@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : "^8.0"
+    }
+}
