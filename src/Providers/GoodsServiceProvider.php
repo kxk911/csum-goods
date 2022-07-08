@@ -5,7 +5,7 @@ namespace kxk911\csum\goods\Providers;
 use Illuminate\Support\ServiceProvider;
 use kxk911\csum\goods\Console\Commands\ExampleCommand;
 
-class LaravelExampleServiceProvider extends ServiceProvider
+class GoodsServiceProvider extends ServiceProvider
 {
     public function boot()
     {
