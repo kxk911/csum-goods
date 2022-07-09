@@ -2,8 +2,7 @@
 
 namespace kxk911\csum\goods\Console\Commands;
 
-use App\Models\Goods;
-use Yuraplohov\LaravelExample\Models\Item;
+use kxk911\csum\goods\Models\Goods;
 
 class GoodsController
 {

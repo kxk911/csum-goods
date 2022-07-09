@@ -5,7 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Kxk911\\csum-goods\\": "src/"
+            "Kxk911\\csum\\goods\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "kxk911\\csum\\goods\\": "Test/"
         }
     },
     "authors": [
@@ -19,6 +24,16 @@
         "php" : "^8.0",
         "illuminate/console": "^9.0",
         "illuminate/database": "^9.0",
-        "illuminate/support": "^9.0"
+        "illuminate/support": "^9.0",
+        "orchestra/testbench": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "scripts": {
+		"test": [
+	  		"vendor/bin/phpunit"
+		]
     }
+    
 }
