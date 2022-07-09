@@ -3,11 +3,11 @@
 namespace Kxk911\CsumGoods\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Kxk911\CsumGoods\Traits\GoodTrait;
+use Kxk911\CsumGoods\Traits\VariantTrait;
 
-class Good extends Model
+class Variants extends Model
 {
-    use GoodTrait;
+    use VariantTrait;
 
     protected $fillable = [
         'name',
@@ -16,7 +16,7 @@ class Good extends Model
         'visible'
     ];
 
-    public function variants(){
-        return $this->hasMany(Variants::class, 'good_id', 'id');
+    public function good(){
+        return $this->hasOne(Good::class, 'id', 'good_id');
     }
 }

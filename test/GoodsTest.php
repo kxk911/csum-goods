@@ -11,18 +11,20 @@ class GoodsTest extends FeatureTestCase
      */
     public function it_gets_all_items()
     {
-        Good::forceCreate(['name' => 'Name 1']);
-        Good::forceCreate(['name' => 'Name 2']);
+       $good = new Good();
+       $good->addNew(
+            $name = "test",
+            $brand = "lenovo"
+       );
+       
+       
+       $good->addVariant("testVar", "test", 0,0);
 
-        $response = $this->get('goods');
-        
-        $response->assertStatus(200);
-
-        $response->assertExactJson([
-            'items' => [
-                ['name' => 'Name 1'],
-                ['name' => 'Name 2'],
-            ]
-        ]);
+       dd($good->variants[0]->setAtributes(
+        [
+            "Процессоо" => "i3"
+        ]
+       ));
+       
     }
 }

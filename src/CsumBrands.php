@@ -12,6 +12,11 @@ class CsumBrands {
         return Brand::find($brand_id);
     }
 
+    public static function find(string $name): Brand|null
+    {
+        return Brand::where('name', $name)->first();
+    }
+
     public static function add(string $name, bool $is_active = true): Brand
     {
         $brand = new Brand;

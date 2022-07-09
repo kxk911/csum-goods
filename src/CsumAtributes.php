@@ -12,6 +12,11 @@ class CsumAtributes {
         return Atribute::find($atribute_id);
     }
 
+    public static function find($name)
+    {
+        return Atribute::where('name', $name)->first();
+    }
+
     public static function add(string $name, bool $is_active = true): Atribute
     {
         $atribute = new Atribute();
