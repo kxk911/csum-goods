@@ -2,10 +2,12 @@
 
 namespace Kxk911\CsumGoods;
 
-class GoodsService
+class Goods
 {
     public function getSomeResult()
     {
         return 'bar';
     }
+
+    // public function add
 }

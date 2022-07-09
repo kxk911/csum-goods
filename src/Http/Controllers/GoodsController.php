@@ -1,14 +1,14 @@
 <?php
 
-namespace Kxk911\CsumGoods\Console\Commands;
+namespace Kxk911\CsumGoods\Http\Controllers;
 
-use Kxk911\CsumGoods\Models\Goods;
+use Kxk911\CsumGoods\Models\Good;
 
 class GoodsController
 {
-    public function good()
+    public function goods()
     {
-        $items = Goods::select(['name'])->get();
+        $items = Good::select(['name'])->get();
 
         return response()->json([
             'items' => $items,

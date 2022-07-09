@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Yuraplohov\LaravelExample\Http\Controllers\ItemsController;
+use Kxk911\CsumGoods\Http\Controllers\GoodsController;
 
-Route::get('good', [GoodsController::class, 'good']);
+Route::get('goods', [GoodsController::class, 'goods']);

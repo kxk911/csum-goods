@@ -2,7 +2,7 @@
 
 namespace Kxk911\CsumGoods\Test;
 
-use Kxk911\CsumGoods\GoodsService;
+use Kxk911\CsumGoods\Goods;
 use PHPUnit\Framework\TestCase;
 
 
@@ -13,7 +13,7 @@ class GoodsService1est extends TestCase
      */
     public function it_gets_some_result()
     {
-        $sut = new GoodsService;
+        $sut = new Goods;
         $this->assertEquals('bar', $sut->getSomeResult());
     }
 }

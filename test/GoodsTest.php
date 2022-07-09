@@ -2,7 +2,7 @@
 
 namespace Kxk911\CsumGoods\Test;
 
-use Kxk911\CsumGoods\Models\Goods;
+use Kxk911\CsumGoods\Models\Good;
 
 class GoodsTest extends FeatureTestCase
 {
@@ -11,11 +11,11 @@ class GoodsTest extends FeatureTestCase
      */
     public function it_gets_all_items()
     {
-        Goods::forceCreate(['name' => 'Name 1']);
-        Goods::forceCreate(['name' => 'Name 2']);
+        Good::forceCreate(['name' => 'Name 1']);
+        Good::forceCreate(['name' => 'Name 2']);
 
         $response = $this->get('goods');
-
+        
         $response->assertStatus(200);
 
         $response->assertExactJson([
