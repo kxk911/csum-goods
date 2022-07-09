@@ -1,0 +1,31 @@
+version: '3'
+services:
+
+  #PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: digitalocean.com/php
+    container_name: CsumGoods
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - app-network-csum-good
+
+
+#Docker Networks
+networks:
+  app-network-csum-good:
+    driver: bridge
+#Volumes
+volumes:
+  dbdata:
+    driver: local
