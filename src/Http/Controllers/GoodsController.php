@@ -1,8 +1,8 @@
 <?php
 
-namespace kxk911\csum\goods\Console\Commands;
+namespace Kxk911\CsumGoods\Console\Commands;
 
-use kxk911\csum\goods\Models\Goods;
+use Kxk911\CsumGoods\Models\Goods;
 
 class GoodsController
 {

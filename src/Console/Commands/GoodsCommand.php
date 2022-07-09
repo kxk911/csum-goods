@@ -1,6 +1,6 @@
 <?php
 
-namespace kxk911\csum\goods\Console\Commands;
+namespace Kxk911\CsumGoods\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Config;

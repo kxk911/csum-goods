@@ -1,8 +1,8 @@
 <?php
 
-namespace kxk911\csum\goods\Test;
+namespace Kxk911\CsumGoods\Test;
 
-use kxk911\csum\goods\GoodsService;
+use Kxk911\CsumGoods\GoodsService;
 use PHPUnit\Framework\TestCase;
 
 

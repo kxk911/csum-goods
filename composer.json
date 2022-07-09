@@ -5,12 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Kxk911\\csum\\goods\\": "src/"
+            "Kxk911\\CsumGoods\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "kxk911\\csum\\goods\\": "Test/"
+            "Kxk911\\CsumGoods\\": "Test/"
         }
     },
     "authors": [

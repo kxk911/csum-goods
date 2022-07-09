@@ -1,9 +1,9 @@
 <?php
 
-namespace kxk911\csum\goods\Providers;
+namespace Kxk911\CsumGoods\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use kxk911\csum\goods\Console\Commands\GoodsCommand;
+use Kxk911\CsumGoods\Console\Commands\GoodsCommand;
 
 class GoodsServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class GoodsServiceProvider extends ServiceProvider
             $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
 
             $this->publishes([
-                __DIR__ . '/../../config/csum-goods.php' => config_path('csum-goods.php'),
+                __DIR__ . '/../../config/csumgoods.php' => config_path('csumgoods.php'),
             ]);
 
             $this->commands([

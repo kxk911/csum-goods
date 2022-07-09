@@ -1,6 +1,6 @@
 <?php
 
-namespace kxk911\csum\goods;
+namespace Kxk911\CsumGoods;
 
 class GoodsService
 {

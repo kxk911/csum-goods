@@ -1,6 +1,6 @@
 <?php
 
-namespace kxk911\csum\goods\Models;
+namespace Kxk911\CsumGoods\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
