@@ -10,7 +10,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Kxk911\\CsumGoods\\": "Test/"
+            "Kxk911\\CsumGoods\\Test\\": "test/"
         }
     },
     "authors": [
@@ -34,6 +34,13 @@
 		"test": [
 	  		"vendor/bin/phpunit"
 		]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kxk911\\CsumGoods\\Providers\\EloquentFilterServiceProvider"
+            ]
+        }
     }
     
 }

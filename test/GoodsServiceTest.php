@@ -6,7 +6,7 @@ use Kxk911\CsumGoods\GoodsService;
 use PHPUnit\Framework\TestCase;
 
 
-class GoodsServiceTest extends TestCase
+class GoodsService1est extends TestCase
 {
     /**
      * @test
