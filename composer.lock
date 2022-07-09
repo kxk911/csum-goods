@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "425d3c16e34a7b7289c14ca215606c71",
+    "content-hash": "a9ff915c4dda55319b04b28b29bca4f3",
     "packages": [
         {
             "name": "brick/math",
@@ -3814,12 +3814,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "8098c8e253536f9a2b10ec27a3f9eed567ecc5a9"
+                "reference": "eadec235d9e8551fe97cea17ac034e37ee648cf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/8098c8e253536f9a2b10ec27a3f9eed567ecc5a9",
-                "reference": "8098c8e253536f9a2b10ec27a3f9eed567ecc5a9",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/eadec235d9e8551fe97cea17ac034e37ee648cf2",
+                "reference": "eadec235d9e8551fe97cea17ac034e37ee648cf2",
                 "shasum": ""
             },
             "require": {
@@ -3886,7 +3886,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/6.1"
+                "source": "https://github.com/symfony/translation/tree/6.2"
             },
             "funding": [
                 {
@@ -3902,7 +3902,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-27T17:24:16+00:00"
+            "time": "2022-07-09T08:22:50+00:00"
         },
         {
             "name": "symfony/translation-contracts",

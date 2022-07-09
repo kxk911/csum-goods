@@ -38,7 +38,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kxk911\\CsumGoods\\Providers\\GoodsServiceProvider"
+                 "Kxk911\\CsumGoods\\Providers\\GoodsServiceProvider"
             ]
         }
     }

@@ -32,6 +32,7 @@ class FeatureTestCase extends TestCase
 
     protected function setUpDatabase()
     {
-        $this->artisan('migrate')->run();
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations/0000_00_00_000000_create_goods_table');
+        //$this->artisan('migrate')->run();
     }
 }
